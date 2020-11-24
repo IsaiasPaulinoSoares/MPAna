@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<title>Masterpiece - Página Inicial</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-yellow.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style> 
+input[type=text] {
+  width: 60%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  font-size: 14px;
+  background-color: white;
+  background-image: url('lupa.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+}
+
+div.d {
+  text-align: justify;
+}
+
+</style>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-yellow w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-dark-yellow"><i class="fa fa-home w3-margin-right"></i>Início</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-yellow">Artes</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-yellow">Artistas</a>
+  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-yellow">Integrantes</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-yellow">Contatos</a>
+    
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-yellow w3-large">Logar</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-yellow w3-display-topright" title="Close Modal">&times;</span>
+        <img src="LogM.png" alt="LogM" style="width:40%" class="w3-circle w3-margin-top">
+      </div>
+
+      <form class="w3-container" action="/action_page.php">
+        <div class="w3-section">
+          <label><b>Email do Usuário</b></label>
+          <input class="w3-input w3-border w3-margin-bottom" placeholder="Insira seu E-mail" name="usrname" required>
+          <label><b>Senha</b></label>
+          <input class="w3-input w3-border" type="password" placeholder="Insira sua senha" name="psw" required>
+      <BR>
+      <label><b>Insira seu tipo de usuário:</b></label>
+      <BR>
+      <form>
+      <INPUT TYPE="radio" NAME="OPCAO" VALUE="op1" CHECKED> Visitante
+      <BR>
+      <INPUT TYPE="radio" NAME="OPCAO" VALUE="op2"> Artista
+      </form>
+
+          <button class="w3-button w3-block w3-yellow w3-section w3-padding" type="submit">Logar</button>
+          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Me lembre
+          <button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-button w3-right w3-black">Cancelar</button>
+        </div>
+      </form>
+
+      <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+        <label>Deseja logar mas não possui uma conta? <a href="Pagina_Artistas.html">Clique aqui!</a></label>
+        <br>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  </div>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#artes" class="w3-bar-item w3-button">Artes</a>
+    <a href="#artistas" class="w3-bar-item w3-button">Artistas</a>
+    <a href="#integrantes" class="w3-bar-item w3-button">Integrantes</a>
+    <a href="#contatos" class="w3-bar-item w3-button">Contatos</a>
+    <a href="#" class="w3-bar-item w3-button">Pesquisar</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="GRSSL.jpg" alt="boat" style="width:100%;min-height:100px;max-height:400px;">
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-yellow w3-display-container"> 
+  </div>
+</div>
+
+<br>
+<form>
+  <input type="text" name="search" placeholder="Digite aqui o que deseja pesquisar...">
+  <button class="w3-button w3-yellow w3-padding-large"> Pesquisar</button>
+</form>
+
+<hr>
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>Artes Variadas</h2>
+<p>Descubra abaixo um mundo de variadas artes e trabalhos impressionantes!</p>
+
+<div class="w3-row"><br>
+
+  <div class="w3-quarter">
+  <img src="MSC.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Música</h3>
+  <p><a href="Pagina_Artes_Musica.html">Visitar!</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="PTR.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Pintura</h3>
+  <p><a href="Pagina_Artes_Pintura.html">Visitar!</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="ATS.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Artesanato</h3>
+  <p><a href="Pagina_Artes_Artesanato.html">Visitar!</a></p>
+</div>
+
+<div class="w3-quarter">
+  <img src="CMR.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Fotografia</h3>
+  <p><a href="Pagina_Artes_Fotografia.html">Visitar!</a></p>
+</div>
+
+</div>
+<hr>
+<p><a href="Pagina_Categorias_Artes.html">Para mais categorias clique aqui!</a></p>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-yellow w3-theme-l1" id="work">
+
+<div class="w3-quarter">
+<h2>Artistas</h2>
+<div class="d">
+<p>Bem-vindo querido usuário! Esperamos que tenha gostado do que foi visto até o momento. Este site têm como princípio reconhecer e ajudar novos artistas pela região. Aqui a sua arte é apreciada por diversas pessoas, além disso você pode apreciar outras artes que o chame a atenção.<br>Tendo interesse em mais artistas, clique no botão "+", que está logo abaixo.</p>
+</div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="MLS.jpg" alt="Snow" style="width:100%">
+  <div class="w3-container">
+  <h3>Leonardo da Vinci</h3>
+  <p>"Mona Lisa"</p>
+  <div class="d">
+  <p>Obra mais reconhecida de da Vinci, era italiano e foi muito conhecido como um grande renascentista da época, a obra foi feita em 1503, com a técnica de sfumado.</p>
+  </div>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="VGG.jpg" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Van Gogh</h3>
+  <p>"Autorretrato com chapéu de palha"</p>
+  <div class="d">
+  <p>Obra feita a óleo sobre a tela, pintada durante os anos de 1887-1888, foram esse dois anos em que Vincent Van Gogh viveu em Paris.</p>
+  </div>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="FDK.jpg" alt="Mountains" style="width:100%">
+  <div class="w3-container">
+  <h3>Frida Kahlo</h3>
+  <p>"As duas Fridas"</p>
+  <div class="d">
+  <p>Obra feita em 1939, uma espécime de autorretrato, localiza-se atualmene no Museu de Arte Moderno de México. Considerada como primeira sua obra de grande dimensão.</p>
+  </div>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-yellow"
+  style="position:absolute;top:-28px;right:24px" href="Pagina_Artistas.html">+</a>
+</div>
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>Integrantes - Masterpiece</h2>
+    <p>Saiba sobre os criadores da Masterpiece</p><br>
+    
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <br>
+  <img src="Ana.jpeg" style="width:45%" class="w3-circle w3-hover-opacity">
+  <div class="w3-container">
+  <h3>Ana Clara</h3>
+  <h4>17 anos</h4>
+        <li class="w3-padding-16"><b>Função:</b> Marketing do site </li>
+        <li class="w3-padding-16"><b>Cargo Atual:</b> Criadora/Designer de objetos e artesanato</li>
+    <br>
+    <button class="w3-button w3-yellow w3-padding-large"><a href="Pag_Func_A.html">Mais informações</a></button>
+    <br>
+    <br>
+  </div>
+  </div>
+</div>
+
+    <div class="w3-quarter">
+<div class="w3-card w3-white">
+<br>
+  <img src="Gio.jpeg" style="width:45%" class="w3-circle w3-hover-opacity">
+  <div class="w3-container">
+<h3>Giovana Sorice</h3>
+  <h4>17 anos</h4>
+        <li class="w3-padding-16"><b>Função:</b> Gestão da empresa/site Masterpice</li>
+        <li class="w3-padding-16"><b>Cargo Atual:</b> Desenhista e Musicista informal</li>
+    <br>
+    <button class="w3-button w3-yellow w3-padding-large"><a href="Pag_Func_G.html">Mais informações</a></button>
+    <br>
+    <br>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <br>
+  <img src="Joao.jpg" style="width:45%" class="w3-circle w3-hover-opacity">
+  <div class="w3-container">
+   <h3>João Emanuel</h3>
+  <h4>17 anos</h4>
+        <li class="w3-padding-16"><b>Função:</b> Arte e Conceito visual do site </li>
+        <li class="w3-padding-16"><b>Cargo Atual:</b> Desenhista, Compositora, Musicista</li>
+    <br>
+    <button class="w3-button w3-yellow w3-padding-large"><a href="Pag_Func_J.html">Mais informações</a></button>
+    <br>
+    <br>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <br>
+  <img src="Kes.jpg" style="width:45%" class="w3-circle w3-hover-opacity">
+  <div class="w3-container">
+  <h3>Késia Bastos</h3>
+  <h4>17 anos</h4>
+        <li class="w3-padding-16"><b>Função:</b> Gerenciamento do site </li>
+        <li class="w3-padding-16"><b>Cargo Atual:</b> Criadora de lettring e designer de web</li>
+    <br>
+    <button class="w3-button w3-yellow w3-padding-large"><a href="Pag_Func_K.html">Mais informações</a></button>
+    <br>
+    <br>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-yellow w3-bottombar">Contatos Masterpiece:</span></div>
+      <h3>Queridos Usuários</h3>
+      <p>Caso tenham maiores dúvidas, entrem em contato conosco:</p>
+      <p><i class="fa fa-map-marker w3-text-yellow w3-xlarge"></i> -> Caçapava-SP - R. das Palmeiras - Nº68</p>
+      <p><i class="fa fa-phone w3-text-yellow w3-xlarge"></i> -> 55+ (12) 99746-0596</p>
+      <p><i class="fa fa-envelope-o w3-text-yellow w3-xlarge"></i> -> masterpiece@gmail.com</p>
+    </div>
+    <div class="w3-col m7">  
+        <h3>Dúvidas Frequentes:</h3>
+        <table class="w3-table w3-striped w3-white">
+          <tr>
+            <td>"Como comprar uma obra?"</td>
+          </tr>
+          <tr>
+            <td>Resposta: Nosso site tem o princípio de ser um porta voz, aqui não vendemos o produto, os visitantes interessados numa arte devem entrar em contato com o artista da mesma.</td>
+          </tr>
+          <tr>
+            <td>"Como posso publicar minha arte?"</td>
+          </tr>
+          <tr>
+            <td>Resposta: Simples! Você usuário pode publicar sua arte apenas se você se cadastrar como artista, eles possuem essa possibilidade, usuários tipo visitantes não tem essa opção.</td>
+          </tr>
+        </table>
+      </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="GFT.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-yellow w3-center">
+  <h4>Para novidades e mais informações </h4>
+  <a class="w3-button w3-large w3-yellow" href="javascript:void(0)" title="Instagram"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-yellow" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-yellow" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <p>Siga-nos em nossas redes sociais !</p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-yellow w3-hide-small">Vá para cima</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
